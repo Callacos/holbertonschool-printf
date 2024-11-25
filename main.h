@@ -6,7 +6,7 @@
 /**
  * struct print - Struct print
  *
- * @c: The character
+ * @p: The character
  * @f: The function associated
  */
 
