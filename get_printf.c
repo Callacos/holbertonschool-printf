@@ -10,8 +10,8 @@
 
 int get_printf(const char c, va_list ap)
 {
-	int i;
-	int j;
+	int i = 0;
+	int count = 0;
 
 	print_t print[] = {
 		{'c', print_char},
@@ -24,7 +24,8 @@ int get_printf(const char c, va_list ap)
 	{
 		if (print[i].p == c)
 		{
-			print[i].f(ap);
+			count = print[i].f(ap);
+			return (count);
 		}
 		i++;
 	}
