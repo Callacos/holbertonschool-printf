@@ -3,7 +3,21 @@
 
 #include <stdarg.h>
 
+/**
+ * struct print - Struct print
+ *
+ * @c: The character
+ * @f: The function associated
+ */
+
+typedef struct print
+{
+	char p;
+	int (*f)(va_list);
+} print_t;
+
 int _putchar(char c);
 int _printf(const char *format, ...);
+int get_printf(const char c, va_list ap);
 
 #endif
