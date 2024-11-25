@@ -19,10 +19,18 @@ void print_char(va_list ap)
 */
 void print_string(va_list ap)
 {
-	_putchar(va_arg(ap, char *));
-	return (0);
-}
+    char *str = va_arg(ap, char *);
 
+    if (str == NULL) {
+        str = "(null)";
+    }
+
+    while (*str)
+	{
+        putchar(*str);
+        str++;
+    }
+}
 /**
 * print_porcent - print a pourcent with a charactere %
 * @ap: argument
@@ -31,6 +39,6 @@ void print_string(va_list ap)
 */
 void print_porcent(va_list ap)
 {
-	_putchar(va_arg(ap, int));
+	_putchar('%');
 	return (0);
 }
