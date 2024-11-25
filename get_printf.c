@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * get_printf - selects the correct function to print
@@ -9,21 +10,22 @@
 
 int get_printf(const char c, va_list ap)
 {
-	int i;
-	int j;
+	int i = 0;
+	int count = 0;
 
 	print_t print[] = {
 		{'c', print_char},
 		{'s', print_string},
 		{'%', print_porcent},
-		{'\0', NULL}
+		{NULL, NULL}
 	};
 
 	while (print[i].p)
 	{
 		if (print[i].p == c)
 		{
-			print[i].f(ap);
+			count = print[i].f(ap);
+			return (count);
 		}
 		i++;
 	}
