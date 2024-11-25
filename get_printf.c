@@ -29,5 +29,7 @@ int get_printf(const char c, va_list ap)
 		}
 		i++;
 	}
-	return (0);
+	_putchar('%');
+	_putchar(c);
+	return (2);
 }
