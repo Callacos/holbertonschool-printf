@@ -33,7 +33,7 @@ int print_string(va_list ap)
 
     while (*str)
 	{
-        putchar(*str);
+        _putchar(*str);
         str++;
         count++;
     }

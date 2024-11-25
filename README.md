@@ -36,6 +36,18 @@ Let's try to printf a simple sentence.
 Negative:[-762534]
 ```
 # Testing
+We tested our code in parallel with printf to see where we had errors:
+`~/holbertonschool-printf$ ./a.out
+Let's try to printf a simple sentence.
+Let's try to printf a simple sentence.
+Character:[H]
+Character:[H]
+String:[I am a string !]
+String:[I am a string !]
+Percent:[%]
+Percent:[%]
+Null string:[(null)]
+Null string:[(null)]`
 
 
 
