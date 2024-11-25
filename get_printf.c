@@ -17,7 +17,7 @@ int get_printf(const char c, va_list ap)
 		{'c', print_char},
 		{'s', print_string},
 		{'%', print_porcent},
-		{NULL, NULL}
+		{'\0', NULL}
 	};
 
 	while (print[i].p)

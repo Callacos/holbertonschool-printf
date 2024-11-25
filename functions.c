@@ -24,6 +24,7 @@ int print_char(va_list ap)
 int print_string(va_list ap)
 {
     char *str = va_arg(ap, char *);
+    int count = 0;
 
     if (str == NULL)
     {
@@ -34,8 +35,9 @@ int print_string(va_list ap)
 	{
         putchar(*str);
         str++;
+        count++;
     }
-    return (0);
+    return (count);
 }
 /**
 * print_porcent - print a pourcent with a charactere %
@@ -46,6 +48,7 @@ int print_string(va_list ap)
 
 int print_porcent(va_list ap)
 {
+    (void)ap;
 	_putchar('%');
 	return (1);
 }
