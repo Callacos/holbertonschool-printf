@@ -19,5 +19,8 @@ typedef struct print
 int _putchar(char c);
 int _printf(const char *format, ...);
 int get_printf(const char c, va_list ap);
+void print_char(va_list ap);
+void print_string(va_list ap);
+void print_porcent(va_list ap);
 
 #endif
