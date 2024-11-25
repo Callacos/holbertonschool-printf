@@ -44,8 +44,10 @@ Negative:[-762534]
 
 
 # Authors
-Sébastien Georgescu 
+Sébastien Georgescu  
+
 Github: https://github.com/sebgrgs
 
-Cratere Esteban 
+Cratere Esteban  
+ 
 Github: https://github.com/Callacos

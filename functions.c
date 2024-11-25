@@ -8,10 +8,10 @@
 * Return: 0
 */
 
-void print_char(va_list ap)
+int print_char(va_list ap)
 {
 	_putchar(va_arg(ap, int));
-	return (0);
+	return (1);
 }
 
 /**
@@ -21,7 +21,7 @@ void print_char(va_list ap)
 * Return: 0
 */
 
-void print_string(va_list ap)
+int print_string(va_list ap)
 {
     char *str = va_arg(ap, char *);
 
@@ -35,6 +35,7 @@ void print_string(va_list ap)
         putchar(*str);
         str++;
     }
+    return (0);
 }
 /**
 * print_porcent - print a pourcent with a charactere %
@@ -43,8 +44,8 @@ void print_string(va_list ap)
 * Return: 0
 */
 
-void print_porcent(va_list ap)
+int print_porcent(va_list ap)
 {
 	_putchar('%');
-	return (0);
+	return (1);
 }
