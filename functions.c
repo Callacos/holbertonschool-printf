@@ -52,4 +52,47 @@ int print_porcent(va_list ap)
 	_putchar('%');
 	return (1);
 }
+/**
+ * print_number - Affiche un entier
+ * @n: L'entier à afficher
+ */
+void print_number(int n, int *count)
+{
+	unsigned int num;
 
+	if (n < 0)
+	{
+		_putchar('-');
+		num = -n;
+        (*count)++;
+	}
+	else
+	{
+		num = n;
+	}
+
+	if (num / 10)
+	{
+		print_number(num / 10, count);
+	}
+	_putchar((num % 10) + '0');
+    (*count)++;
+}
+
+
+
+/**
+ * print_int - Gère l'affichage des spécificateurs %d et %i
+ * @ap: Liste d'arguments
+ *
+ * Return: Nombre de caractères imprimés
+ */
+int print_int(va_list ap)
+{
+	int n = va_arg(ap, int);
+	int count = 0;
+
+	print_number(n, &count);
+
+	return (count);
+}
