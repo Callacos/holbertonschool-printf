@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
 * print_char - print a charactere c
-*@ap: argument
+* @ap: argument
 *
 * Return: 0
 */
@@ -13,7 +13,7 @@ void print_char(va_list ap)
 }
 /**
 * print_string - print a string with a charactere s
-*@ap: argument
+* @ap: argument
 *
 * Return: 0
 */
@@ -21,7 +21,8 @@ void print_string(va_list ap)
 {
     char *str = va_arg(ap, char *);
 
-    if (str == NULL) {
+    if (str == NULL)
+    {
         str = "(null)";
     }
 
