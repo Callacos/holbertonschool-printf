@@ -50,7 +50,8 @@ Null string:[(null)]
 Null string:[(null)]`
 
 
-
+# flowchart 
+![flowchart](/home/callacos/Téléchargements/Diagramme sans nom(2).drawio)
 
 
 
