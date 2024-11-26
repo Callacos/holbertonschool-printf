@@ -6,7 +6,7 @@
 /**
  * struct print - Struct print
  *
- * @c: The character
+ * @p: The character
  * @f: The function associated
  */
 
@@ -23,5 +23,8 @@ void print_char(va_list ap);
 void print_string(va_list ap);
 void print_porcent(va_list ap);
 int print_int(va_list ap);
+int print_char(va_list ap);
+int print_string(va_list ap);
+int print_porcent(va_list ap);
 
 #endif

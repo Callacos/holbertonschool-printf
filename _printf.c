@@ -16,6 +16,27 @@ int _printf(const char *format, ...)
 	{
 		return (-1);
 	}
-	
-	va_start
+
+	va_start(ap, format);
+
+	while (format && format[i])
+	{
+		if (format[i] == '%')
+		{
+			if (format[i + 1] == '\0')
+			{
+				return (-1);
+			}
+			count += get_printf(format[i + 1], ap);
+			i += 2;
+		}
+		else
+		{
+			_putchar(format[i]);
+			count++;
+			i++;
+		}
+	}
+	va_end(ap);
+	return (count);
 }
