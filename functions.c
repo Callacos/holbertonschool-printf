@@ -56,6 +56,7 @@ int print_porcent(va_list ap)
 /**
  * print_number - Display an integer
  * @n: The integer to print
+ * @count: The number of characters printed
  */
 
 void print_number(int n, int *count)
@@ -66,7 +67,7 @@ void print_number(int n, int *count)
 	{
 		_putchar('-');
 		num = -n;
-        (*count)++;
+		(*count)++;
 	}
 	else
 	{
@@ -78,13 +79,13 @@ void print_number(int n, int *count)
 		print_number(num / 10, count);
 	}
 	_putchar((num % 10) + '0');
-    (*count)++;
+	(*count)++;
 }
 
 /**
  * print_int - Display an integer
  * @ap: List of arguments
- * 
+ *
  * Return: Number of characters printed
  */
 
