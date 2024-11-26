@@ -5,7 +5,7 @@
 * print_char - print a charactere c
 * @ap: argument
 *
-* Return: 0
+* Return: Number of characters printed
 */
 
 int print_char(va_list ap)
@@ -18,7 +18,7 @@ int print_char(va_list ap)
 * print_string - print a string with a charactere s
 * @ap: argument
 *
-* Return: 0
+* Return: Number of characters printed
 */
 
 int print_string(va_list ap)
@@ -43,7 +43,7 @@ int print_string(va_list ap)
 * print_porcent - print a pourcent with a charactere %
 * @ap: argument
 *
-* Return: 0
+* Return: Number of characters printed
 */
 
 int print_porcent(va_list ap)
