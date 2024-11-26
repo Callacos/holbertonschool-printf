@@ -51,7 +51,7 @@ Null string:[(null)]`
 
 
 # flowchart 
-![flowchart](/home/callacos/Téléchargements/Diagramme sans nom(2).drawio)
+<img src="https://files.slack.com/files-pri/T0423U1MW21-F082J6ULVS6/flowchart.drawio.png">
 
 
 
