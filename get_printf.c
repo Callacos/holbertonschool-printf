@@ -17,6 +17,8 @@ int get_printf(const char c, va_list ap)
 		{'c', print_char},
 		{'s', print_string},
 		{'%', print_porcent},
+		{'d', print_int},
+		{'i', print_int},
 		{'\0', NULL}
 	};
 
