@@ -50,8 +50,8 @@ Null string:[(null)]
 Null string:[(null)]`
 
 
-# flowchart 
-<img src="https://files.slack.com/files-pri/T0423U1MW21-F082J6ULVS6/flowchart.drawio.png">
+# Flowchart 
+![Flowchart](flowchart.drawio.png)
 
 
 
