@@ -19,6 +19,10 @@ int get_printf(const char c, va_list ap)
 		{'%', print_porcent},
 		{'d', print_int},
 		{'i', print_int},
+		{'u', print_unsigned},
+		{'o', print_octal},
+		{'x', print_hex},
+		{'X', print_HEX},
 		{'r', print_rev},
 		{'\0', NULL}
 	};

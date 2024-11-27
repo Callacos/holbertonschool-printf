@@ -58,7 +58,6 @@ int print_porcent(va_list ap)
  * @n: The integer to print
  * @count: The number of characters printed
  */
-
 void print_number(int n, int *count)
 {
 	unsigned int num;
