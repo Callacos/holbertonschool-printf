@@ -28,5 +28,6 @@ int print_unsigned(va_list ap);
 int print_octal(va_list ap);
 int print_hex(va_list ap);
 int print_HEX(va_list ap);
+int print_rev(va_list ap);
 
 #endif

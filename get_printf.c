@@ -23,6 +23,7 @@ int get_printf(const char c, va_list ap)
 		{'o', print_octal},
 		{'x', print_hex},
 		{'X', print_HEX},
+		{'r', print_rev},
 		{'\0', NULL}
 	};
 

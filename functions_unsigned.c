@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+
 /**
  * print_number_base - display number in base
  * @num: Number to display
@@ -7,8 +8,8 @@
  * @uppercase: if true use uppercase letters
  * @count: Pointer for count caracters printed
  */
-void print_number_base(unsigned int num, unsigned int base,
-int uppercase, int *count)
+
+void print_number_base(unsigned int num, unsigned int base, int uppercase, int *count)
 {
 	char digit;
 
@@ -33,9 +34,9 @@ int uppercase, int *count)
 /**
  * print_unsigned - manages the display of the %u specifier (unsigned int)
  * @ap: List of variadic arguments
- *
- * Return: number of printed characters
+ * Return: Number of printed characters
  */
+
 int print_unsigned(va_list ap)
 {
 	unsigned int num = va_arg(ap, unsigned int);
@@ -51,9 +52,9 @@ int print_unsigned(va_list ap)
 /**
  * print_octal - manages the display of the %o specifier (octal)
  * @ap: List of variadic arguments
- *
  * Return: Number of printed characters
  */
+
 int print_octal(va_list ap)
 {
 	unsigned int num = va_arg(ap, unsigned int);
@@ -65,11 +66,11 @@ int print_octal(va_list ap)
 }
 
 /**
- * print_hex- manages the display of the %x specifier (hexadecimal)
+ * print_hex - manages the display of the %x specifier (hexadecimal lowercase)
  * @ap: List of variadic arguments
- *
  * Return: Number of printed characters
  */
+
 int print_hex(va_list ap)
 {
 	unsigned int num = va_arg(ap, unsigned int);
@@ -81,11 +82,11 @@ int print_hex(va_list ap)
 }
 
 /**
- * print_HEX - manages the display of the %X specifier (hexadecimal)
+ * print_HEX- manages the display of the %X specifier (hexadecimal uppercase)
  * @ap: List of variadic arguments
- *
  * Return: Number of printed characters
  */
+
 int print_HEX(va_list ap)
 {
 	unsigned int num = va_arg(ap, unsigned int);
