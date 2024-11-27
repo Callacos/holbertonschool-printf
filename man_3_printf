@@ -39,7 +39,19 @@ Prints a percent sign.
 Prints an integer in base 10.
 .TP
 .B %r
-Prints a strings of charachters in reverse.
+Prints a strings of characters in reverse.
+.TP
+.B %u
+Prints an unsigned integer in base 10.
+.TP
+.B %o
+Prints an integer in base 8.
+.TP
+.B %x
+Prints an integer in base 16 (lowercase).
+.TP
+.B %X
+Prints an integer in base 16 (uppercase).
 .SH EXAMPLES
 .nf
 #include "main.h"
@@ -50,7 +62,11 @@ int main(void)
     _printf("Percent sign: %%\\n");
     _printf("Integer: %d\\n", 123);
     _printf("Reverse: %r\\n"), "Hello";
-    return (0);"
+    _printf("Unsigned: %u\\n", 123);
+    _printf("Octal: %o\\n", 123);
+    _printf("Hexadecimal: %x\\n", 123);
+    _printf("HEX: %X\\n", 123);
+    return (0);
 .B }
 .fi
 .SH SEE ALSO
