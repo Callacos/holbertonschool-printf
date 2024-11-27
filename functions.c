@@ -52,3 +52,48 @@ int print_porcent(va_list ap)
 	_putchar('%');
 	return (1);
 }
+
+/**
+ * print_number - Display an integer
+ * @n: The integer to print
+ * @count: The number of characters printed
+ */
+void print_number(int n, int *count)
+{
+	unsigned int num;
+
+	if (n < 0)
+	{
+		_putchar('-');
+		num = -n;
+		(*count)++;
+	}
+	else
+	{
+		num = n;
+	}
+
+	if (num / 10)
+	{
+		print_number(num / 10, count);
+	}
+	_putchar((num % 10) + '0');
+	(*count)++;
+}
+
+/**
+ * print_int - Display an integer
+ * @ap: List of arguments
+ *
+ * Return: Number of characters printed
+ */
+
+int print_int(va_list ap)
+{
+	int n = va_arg(ap, int);
+	int count = 0;
+
+	print_number(n, &count);
+
+	return (count);
+}
