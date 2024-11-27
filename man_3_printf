@@ -37,6 +37,9 @@ Prints a percent sign.
 .TP
 .B %d, %i
 Prints an integer in base 10.
+.TP
+.B %r
+Prints a strings of charachters in reverse.
 .SH EXAMPLES
 .nf
 #include "main.h"
@@ -46,6 +49,7 @@ int main(void)
     _printf("String: %s\\n", "Hello, World!");
     _printf("Percent sign: %%\\n");
     _printf("Integer: %d\\n", 123);
+    _printf("Reverse: %r\\n"), "Hello";
     return (0);"
 .B }
 .fi
