@@ -19,12 +19,13 @@ typedef struct print
 int _putchar(char c);
 int _printf(const char *format, ...);
 int get_printf(const char c, va_list ap);
-void print_char(va_list ap);
-void print_string(va_list ap);
-void print_porcent(va_list ap);
 int print_int(va_list ap);
 int print_char(va_list ap);
 int print_string(va_list ap);
 int print_porcent(va_list ap);
+int print_unsigned(va_list ap);
+int print_octal(va_list ap);
+int print_hex(va_list ap);
+int print_HEX(va_list ap);
 
 #endif
