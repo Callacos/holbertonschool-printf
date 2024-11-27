@@ -24,6 +24,7 @@ int get_printf(const char c, va_list ap)
 		{'x', print_hex},
 		{'X', print_HEX},
 		{'r', print_rev},
+		{'b', print_binary},
 		{'\0', NULL}
 	};
 
