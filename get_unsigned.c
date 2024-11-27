@@ -19,7 +19,7 @@ int get_unsigned(const char c, va_list ap)
 		{'X', print_HEX},
 		{'\0', NULL}
 };
-while (print[i].p)
+	while (print[i].p)
 	{
 		if (print[i].p == c)
 		{

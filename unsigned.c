@@ -4,10 +4,11 @@
  * print_number_base - display number in base
  * @num: Number to display
  * @base: Base
- * @uppercase: if true use uppercase letters 
+ * @uppercase: if true use uppercase letters
  * @count: Pointer for count caracters printed
  */
-void print_number_base(unsigned int num, unsigned int base, int uppercase, int *count)
+void print_number_base(unsigned int num, unsigned int base,
+int uppercase, int *count)
 {
 	char digit;
 
@@ -64,9 +65,9 @@ int print_octal(va_list ap)
 }
 
 /**
- * print_hex_lower - manages the display of the %x specifier (hexadecimal)
+ * print_hex- manages the display of the %x specifier (hexadecimal)
  * @ap: List of variadic arguments
- * 
+ *
  * Return: Number of printed characters
  */
 int print_hex(va_list ap)
@@ -80,9 +81,9 @@ int print_hex(va_list ap)
 }
 
 /**
- * print_hex_upper - manages the display of the %X specifier (hexadecimal)
+ * print_HEX - manages the display of the %X specifier (hexadecimal)
  * @ap: List of variadic arguments
- * 
+ *
  * Return: Number of printed characters
  */
 int print_HEX(va_list ap)
