@@ -40,6 +40,8 @@ int main(void)
     printf("Len:[%d]\n", len2);
     _printf("String in reverse:[%r]\n", "Hello");
     printf("String in reverse:[%r]\n", "Hello");
+    _printf("%b\n", 98);
+    printf("%b\n", 98);
 	_printf("Unknown:[%w]\n");
 	printf("Unknown:[%w]\n");
     return (0);
