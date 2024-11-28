@@ -13,7 +13,7 @@ This is a repository where Printf has been recreated, printf is a C standard lib
 # Command compilation
 
 ```
-$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
+$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c -o printf
 ```
 
 # Requirements
@@ -55,6 +55,12 @@ Percent:[%]
 Percent:[%]
 Null string:[(null)]
 Null string:[(null)]`
+
+To check the memory leaks we used valgrind:
+```
+ valgrind ./printf
+```
+
 
 
 # Flowchart 
