@@ -1,8 +1,15 @@
 # _printf
 This is a repository where Printf has been recreated, printf is a C standard library function that formats text and writes it to standard output. The name, printf is short for print formatted where print refers to output.
 
-
-
+# File
+* [main.h](./main.h) - Header file with all the prototypes of the functions used in the project.
+* [_printf.c](./_printf.c) - Function that prints a formatted string.
+* [_putchar.c](./_putchar.c) - Function that prints a character.
+* [functions.c](./functions.c) - File with the functions that print the different types of data.
+* [functions2.c](./functions2.c) - File with the functions that print the different
+* [functions_unsigned.c](./functions_unsigned.c) - File with the functions that print the different types of unsigned data.
+* [get_printf.c](./get_printf.c) - Function that selects the correct function to perform the operation.		
+* [man_3_printf](./man_3_printf) - Manual of the _printf function.
 # Command compilation
 
 ```
