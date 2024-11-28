@@ -44,7 +44,8 @@ Negative:[-762534]
 ```
 # Testing
 We tested our code in parallel with printf to see where we had errors:
-`~/holbertonschool-printf$ ./a.out
+```
+~/holbertonschool-printf$ ./printf
 Let's try to printf a simple sentence.
 Let's try to printf a simple sentence.
 Character:[H]
@@ -55,7 +56,7 @@ Percent:[%]
 Percent:[%]
 Null string:[(null)]
 Null string:[(null)]`
-
+```
 To check the memory leaks we used valgrind:
 ```
  valgrind ./printf
