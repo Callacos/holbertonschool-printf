@@ -26,7 +26,22 @@ $ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c -o printf
 -   No more than 5 functions per file
 -   The prototypes of all your functions should be included in your header file called `main.h`
 -   All your header files should be include guarded
--  We are not allowed to use `printf`  
+-  We are not allowed to use `printf`
+
+# Authorized functions and macros
+-   `write`
+-   `malloc`
+-   `free`
+-   `va_start`
+-   `va_end`
+-   `va_copy`
+-   `va_arg`
+
+# Man page
+How to read our man page:
+```
+man ./man_3_printf
+```
 
 # Exemple 
 
